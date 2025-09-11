@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "TlsR98d-UmN9kPtyPDA-_",
+      "username": "admin",
+      "email": "admin@email.com",
+      "password": "123456",
+      "isAdmin": false
+    },
+    {
+      "id": "OwCqodvb37rj-XfanZi45",
+      "username": "",
+      "email": "",
+      "password": "",
+      "isAdmin": false
+    },
+    {
+      "id": "955Yvk_OhzZ0ugmHvNY6N",
+      "username": "",
+      "email": "",
+      "password": "",
+      "isAdmin": false
+    },
+    {
+      "id": "f0-K3YowMq4Xjr9GCq0Or",
+      "username": "",
+      "email": "",
+      "password": "",
+      "isAdmin": false
+    },
+    {
+      "id": "eIfzA9W1tMVamx4SM5OR1",
+      "username": "",
+      "email": "",
+      "password": "",
+      "isAdmin": false
+    }
+  ],
+  "products": [],
+  "carts": []
+}

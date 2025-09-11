@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(225, 225, 225);
+}
+
+.active {
+  -webkit-text-decoration: underline 0.1rem solid skyblue;
+          text-decoration: underline 0.1rem solid skyblue;
+  text-underline-offset: 0.3rem;
+}/*# sourceMappingURL=Nav.module.css.map */
