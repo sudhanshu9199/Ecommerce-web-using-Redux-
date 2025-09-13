@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+.container .card {
+  border-radius: 1.5rem;
+  width: 82%;
+  overflow: hidden;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.08); /* Semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container .card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+}
+.container .card img {
+  border-radius: 1.2rem;
+  height: 14rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.container .card h2 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.container .card p {
+  color: rgba(230, 230, 230, 0.85);
+}
+.container .card p .link {
+  color: #ff7b00;
+}
+.container .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  align-items: center;
+}
+.container .card .bottom .price {
+  color: aliceblue;
+  font-weight: 600;
+}
+.container .card .bottom .cart {
+  background: #F17B0D;
+  color: #111;
+  font-weight: 500;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.container .card .bottom .cart:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=Products.module.css.map */

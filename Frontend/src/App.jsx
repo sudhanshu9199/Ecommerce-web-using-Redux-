@@ -4,9 +4,11 @@ import MainRoutes from './routes/MainRoutes'
 import Nav from './components/Nav'
 import { useDispatch } from 'react-redux'
 import { asyncCurrentUser } from './store/actions/UserActions'
+import { asyncLoadProducts } from './store/actions/ProductActions'
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(asyncLoadProducts());
     dispatch(asyncCurrentUser());
   }, []);
   return (

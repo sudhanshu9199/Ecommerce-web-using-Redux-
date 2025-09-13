@@ -1,41 +1,75 @@
 {
   "users": [
     {
-      "id": "TlsR98d-UmN9kPtyPDA-_",
+      "id": "W5JZn0FTiHeBZ_7beg4aJ",
       "username": "admin",
       "email": "admin@email.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": true
     },
     {
-      "id": "OwCqodvb37rj-XfanZi45",
-      "username": "",
-      "email": "",
-      "password": "",
-      "isAdmin": false
-    },
-    {
-      "id": "955Yvk_OhzZ0ugmHvNY6N",
-      "username": "",
-      "email": "",
-      "password": "",
-      "isAdmin": false
-    },
-    {
-      "id": "f0-K3YowMq4Xjr9GCq0Or",
-      "username": "",
-      "email": "",
-      "password": "",
-      "isAdmin": false
-    },
-    {
-      "id": "eIfzA9W1tMVamx4SM5OR1",
-      "username": "",
-      "email": "",
-      "password": "",
+      "id": "y4mupVqwHoncg2-Pjlhog",
+      "username": "sudh",
+      "email": "sudh@email.com",
+      "password": "123456",
       "isAdmin": false
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "id": "5KQwlk2rHyLLV0bQS9d1g",
+      "image": "https://m.media-amazon.com/images/I/513XkzsI10L._SX300_SY300_QL70_FMwebp_.jpg",
+      "title": "Sofas & Couches",
+      "price": "18,999",
+      "desc": "CRAFTCITY Pumpkin Style Wooden Sofa, Contemporary Modern & Cozy Accent Chair for Living Room (Beige 2 Seater Sofa)",
+      "category": "Living Room Furniture",
+      "store": "Life store"
+    },
+    {
+      "id": "1SjnTbf6LWaBwHX88nKzH",
+      "image": "https://m.media-amazon.com/images/I/31UvKDYc8yL._SY300_SX300_QL70_FMwebp_.jpg",
+      "title": "On-Ear",
+      "price": "989",
+      "desc": "ZEBRONICS Zeb-Thunder PRO On-Ear Wireless Headphone Up to 60 Hours Playback, Wired Mode, USB-C Type Charging(Black)",
+      "category": "Headphones",
+      "store": "Netail company"
+    },
+    {
+      "id": "uEYzYR-Kx5-vSE4OW1SbH",
+      "image": "https://m.media-amazon.com/images/I/614WkNeJpKL._SY879_.jpg",
+      "title": "Button-Down Shirts",
+      "price": "419",
+      "desc": "Leriya Fashion Women's Rayon Oversized Fit Korean Casual Short Sleeve Loose Fit Crop Top|Summer Wear",
+      "category": "shirts",
+      "store": "Fashion leave"
+    },
+    {
+      "id": "cWtNzMz_wpt1MbCfIgOFu",
+      "image": "https://m.media-amazon.com/images/I/71Z-UyiYcBL._SX679_.jpg",
+      "title": "Trekking & Hiking Boots",
+      "price": "1,799",
+      "desc": "Boldfit Trekking Shoes for Men Hiking Shoes Outdoor High Neck Shoes Anti Skid Boot Shoes for Men for Hiking, Trekking Shoes Water Repellent Tracking Shoes for Men- 6, Sandstorm (Multicolor)",
+      "category": "Trekking & Hiking Footwear",
+      "store": "Wear walks"
+    },
+    {
+      "id": "jnaq5_jAwHH39yFFrakgb",
+      "image": "https://m.media-amazon.com/images/I/61FXuDOcA5L._SY625_.jpg",
+      "title": "Loafers & Moccasins",
+      "price": "1594",
+      "desc": "YOHO Bliss Heel 001 Slip-on Loafers for Women | Comfortable & Stylish Block Heeled | Fashion Moccasins with Footpharma Footbed | Perfect for Casual, Formal Shoe",
+      "category": "Casual Shoes",
+      "store": "YOHO Store"
+    },
+    {
+      "id": "g_5zsLCvesXaFp-3UARCQ",
+      "image": "https://m.media-amazon.com/images/I/71jPdHtOj6L._SY625_.jpg",
+      "title": "Sneakers",
+      "price": "1733",
+      "desc": "YOHO Quoi Sneakers for Women | Stylish Casual Shoes | Comfortable Fit | Vibrant Colours | Cushioned Insole",
+      "category": "Casual Shoes",
+      "store": "YOHO Store"
+    }
+  ],
   "carts": []
 }

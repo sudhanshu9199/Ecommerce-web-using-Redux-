@@ -1,15 +1,19 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { asyncLoginUser } from "../store/actions/UserActions";
 import { useDispatch } from "react-redux";
 import style from "../styles/Login.module.scss";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  const navigator = useNavigate();
   const { register, reset, handleSubmit } = useForm();
   const dispatch = useDispatch();
   const loginHandler = (user) => {
     dispatch(asyncLoginUser(user));
+    toast('😊 You Logged!')
     reset();
+    navigator('/');
   };
   return (
     <div className={style.container}>
