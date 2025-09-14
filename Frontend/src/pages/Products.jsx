@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSelector } from 'react-redux'
 import style from '../styles/Products.module.scss';
 import { Link } from 'react-router';

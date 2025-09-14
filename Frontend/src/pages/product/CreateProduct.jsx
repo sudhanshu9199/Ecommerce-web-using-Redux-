@@ -16,7 +16,7 @@ const CreateProduct = () => {
     dispatch(asyncCreateProducts(product))
         console.log(product);
     reset();
-    toast.success('✌️Created successfully!')
+    toast.success('✌️Created successfully!');
     navigator("/products");
   };
   return (
@@ -26,18 +26,18 @@ const CreateProduct = () => {
         <input
           {...register("image")}
           type="url"
-          placeholder="product image url"
+          placeholder="product image url" required
         />
-        <input {...register("title")} type="text" placeholder="title" />
+        <input {...register("title")} type="text" placeholder="title" required/>
         <input
           {...register("price")}
           step={0.1}
           type="number"
-          placeholder="0.00"
+          placeholder="0.00" required
         />
         <textarea
           {...register("desc")}
-          placeholder="product details..."
+          placeholder="product details..." required
         ></textarea>
         <div className={style.bottom}>
           <input className={style.inputs}
@@ -48,7 +48,7 @@ const CreateProduct = () => {
         <input className={style.inputs}
           {...register("store")}
           type="text"
-          placeholder="store/company name..."
+          placeholder="store/company name..." required
         />
         </div>
 

@@ -11,7 +11,6 @@ const Login = () => {
   const dispatch = useDispatch();
   const loginHandler = (user) => {
     dispatch(asyncLoginUser(user));
-    toast('😊 You Logged!')
     reset();
     navigator('/');
   };

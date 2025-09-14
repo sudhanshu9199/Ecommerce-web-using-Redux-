@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 90vh;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    backdrop-filter: 2px 4px 9px #502f4c;
+    width: fit-content;
+
+    .header {
+        margin-bottom: 2rem;
+        h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: "Inter", sans-serif;
+      color: #c8b8db;
+    }
+    }
+
+    input,
+    textarea {
+      width: 35rem;
+      margin-bottom: 1rem;
+      padding: 0.2rem 1rem 0.2rem 0.1rem;
+      font-size: 2rem;
+      border-bottom: 3px solid #502f4c;
+      color: #f9f4f5;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 5rem;
+
+      .inputs {
+        width: fit-content;
+        display: inline-block;
+      }
+    }
+
+    button {
+      background: #c8b8db;
+      color: #502f4c;
+      font-size: 2rem;
+      margin-top: 1rem;
+      padding: 0.5rem 4rem;
+      font-weight: 500;
+      cursor: pointer;
+      &:active {
+        scale: 0.95;
+      }
+    }
+  }
+}

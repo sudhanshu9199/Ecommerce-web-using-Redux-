@@ -35,7 +35,7 @@ const ProductDetail = () => {
 
           {users && users?.isAdmin && <div className={style.bottom}>
             <button type="button" onClick={DeleteHandler}>Delete</button>
-            <button>Update</button>
+            <button onClick={() => navigator(`/update-product/${product.id}`)}>Update</button>
           </div>}
       </div>
     </div>
