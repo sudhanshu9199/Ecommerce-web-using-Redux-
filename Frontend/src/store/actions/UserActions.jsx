@@ -51,3 +51,23 @@ export const asyncCurrentUser = () => async (dispatch, getState) => {
     console.log(error);
   }
 };
+
+export const asyncUpdateUser = (id, user) => async (dispatch, getState) => {
+    try {
+        const { data } =  await axios.patch('/users/' + id, user);
+        localStorage.setItem("user", JSON.stringify(data));
+        dispatch(loaduser(data));
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const asyncDeleteUser = (id) => async (dispatch, getState) => {
+    try {
+        await axios.delete('/users/' + id);
+        dispatch(asyncLogoutUser());
+        toast.success('Deleted successfully!')
+    } catch (error) {
+        console.log(error);
+    }
+}

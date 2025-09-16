@@ -29,12 +29,13 @@ const Nav = () => {
 
       {user ? (
         <>
-          <NavLink
+          {user && user.isAdmin && <NavLink
             className={({ isActive }) => (isActive ? style.active : "")}
             to="/create-product"
           >
             Create product
-          </NavLink>
+          </NavLink>}
+          <NavLink className={({ isActive }) => (isActive ? style.active : "")} to='/user-profile'>Profile</NavLink>
           <button onClick={LogoutHandler}>Logout</button>
         </>
       ) : (
