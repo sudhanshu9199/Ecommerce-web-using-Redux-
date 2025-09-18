@@ -1,26 +1,50 @@
-import React from 'react'
-import { Routes, Route } from 'react-router';
-import Home from '../pages/Home';
-import Login from '../pages/Login';
-import Products from '../pages/products';
-import Register from '../pages/Register';
-import CreateProduct from '../pages/product/CreateProduct';
-import ProductDetail from '../pages/product/ProductDetail';
-import UpdateProduct from '../pages/product/UpdateProduct';
-import UserProfile from '../pages/user/UserProfile';
+import React from "react";
+import { Routes, Route } from "react-router";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Products from "../pages/products";
+import Register from "../pages/Register";
+import CreateProduct from "../pages/product/CreateProduct";
+import ProductDetail from "../pages/product/ProductDetail";
+import UpdateProduct from "../pages/product/UpdateProduct";
+import UserProfile from "../pages/user/UserProfile";
+import Cart from "../pages/Cart";
+import AuthWrapper from "./AuthWrapper";
 const MainRoutes = () => {
   return (
     <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/products' element={<Products />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/register' element={<Register />}/>
-        <Route path='/product/:id' element={<ProductDetail />}/>
-        <Route path='/create-product' element={<CreateProduct />}/>
-        <Route path='/update-product/:id' element={<UpdateProduct />}/>
-        <Route path='/user-profile' element={<UserProfile />}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/product/:id" element={<ProductDetail />} />
+      <Route
+        path="/create-product"
+        element={
+          <AuthWrapper>
+            <CreateProduct />
+          </AuthWrapper>
+        }
+      />
+      <Route path="/update-product/:id" element={<UpdateProduct />} />
+      <Route
+        path="/user-profile"
+        element={
+          <AuthWrapper>
+            <UserProfile />
+          </AuthWrapper>
+        }
+      />
+      <Route
+        path="/cart"
+        element={
+          <AuthWrapper>
+            <Cart />
+          </AuthWrapper>
+        }
+      />
     </Routes>
-  )
-}
+  );
+};
 
-export default MainRoutes
+export default MainRoutes;

@@ -12,27 +12,26 @@ const Login = () => {
   const loginHandler = (user) => {
     dispatch(asyncLoginUser(user));
     reset();
-    navigator('/');
+    navigator("/");
   };
   return (
     <div className={style.container}>
-        <form onSubmit={handleSubmit(loginHandler)}>
-            <h2>Login</h2>
-          <input
-            {...register("email")}
-            type="email"
-            placeholder="abc@email.com"
-          />
-          <input
-            {...register("password")}
-            type="password"
-            placeholder="******"
-          />
-          <button>Login</button>
-          <p>
-            Don't have an account? <Link className={style.links} to="/register">Sign Up</Link>
-          </p>
-        </form>
+      <form onSubmit={handleSubmit(loginHandler)}>
+        <h2>Login</h2>
+        <input
+          {...register("email")}
+          type="email"
+          placeholder="abc@email.com"
+        />
+        <input {...register("password")} type="password" placeholder="******" />
+        <button>Login</button>
+        <p>
+          Don't have an account?{" "}
+          <Link className={style.links} to="/register">
+            Sign Up
+          </Link>
+        </p>
+      </form>
       <div className={style.text}>
         <h2>Welcome Back!</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>

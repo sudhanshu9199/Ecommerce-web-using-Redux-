@@ -7,18 +7,18 @@ import { asyncUpdateProducts } from "../../store/actions/ProductActions";
 import { toast } from "react-toastify";
 
 const UpdateProduct = () => {
-    const { id } = useParams();
-    const products = useSelector(state => state.productsReducer.products);
-    const product = products?.find(products => products.id == id);
-    
+  const { id } = useParams();
+  const products = useSelector((state) => state.productsReducer.products);
+  const product = products?.find((products) => products.id == id);
+
   const { register, handleSubmit } = useForm({
     defaultValues: {
       image: product?.image,
       title: product?.title,
       price: product?.price,
-            desc: product?.desc,
+      desc: product?.desc,
       category: product?.category,
-      store: product?.store
+      store: product?.store,
     },
   });
   const navigator = useNavigate();
@@ -34,8 +34,10 @@ const UpdateProduct = () => {
     <div className={style.container}>
       <form onSubmit={handleSubmit(UpdateProductHandler)}>
         <div className={style.header}>
-            <h2>Update Product</h2>
-        <p>Editing product: <strong>{product?.title || "Loading..."}</strong></p>
+          <h2>Update Product</h2>
+          <p>
+            Editing product: <strong>{product?.title || "Loading..."}</strong>
+          </p>
         </div>
         <input
           {...register("image")}

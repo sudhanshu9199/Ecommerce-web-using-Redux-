@@ -5,14 +5,66 @@
       "username": "admin",
       "email": "admin@email.com",
       "password": "123456",
-      "isAdmin": true
+      "isAdmin": true,
+      "cart": [
+        {
+          "product": {
+            "id": "5KQwlk2rHyLLV0bQS9d1g",
+            "image": "https://m.media-amazon.com/images/I/513XkzsI10L._SX300_SY300_QL70_FMwebp_.jpg",
+            "title": "Sofas & Couches2",
+            "price": "18999",
+            "desc": "CRAFTCITY Pumpkin Style Wooden Sofa, Contemporary Modern & Cozy Accent Chair for Living Room (Beige 2 Seater Sofa)",
+            "category": "Living Room Furniture",
+            "store": "Life store"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "1SjnTbf6LWaBwHX88nKzH",
+            "image": "https://m.media-amazon.com/images/I/31UvKDYc8yL._SY300_SX300_QL70_FMwebp_.jpg",
+            "title": "On-Ear",
+            "price": "989",
+            "desc": "ZEBRONICS Zeb-Thunder PRO On-Ear Wireless Headphone Up to 60 Hours Playback, Wired Mode, USB-C Type Charging(Black)",
+            "category": "Headphones",
+            "store": "Netail company"
+          },
+          "quantity": 10
+        },
+        {
+          "product": {
+            "id": "g_5zsLCvesXaFp-3UARCQ",
+            "image": "https://m.media-amazon.com/images/I/71jPdHtOj6L._SY625_.jpg",
+            "title": "Sneakers",
+            "price": "1733",
+            "desc": "YOHO Quoi Sneakers for Women | Stylish Casual Shoes | Comfortable Fit | Vibrant Colours | Cushioned Insole",
+            "category": "Casual Shoes",
+            "store": "YOHO Store"
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": "uEYzYR-Kx5-vSE4OW1SbH",
+            "image": "https://m.media-amazon.com/images/I/614WkNeJpKL._SY879_.jpg",
+            "title": "Button-Down Shirts",
+            "price": "429",
+            "desc": "Leriya Fashion Women's Rayon Oversized Fit Korean Casual Short Sleeve Loose Fit Crop Top|Summer Wear",
+            "category": "shirts",
+            "store": "Fashion leave"
+          },
+          "quantity": 1
+        }
+      ],
+      "carts": []
     },
     {
       "id": "v_yStfbM9TOmHwVeXfqEz",
       "username": "sudh",
       "email": "sudh@email.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     }
   ],
   "products": [
@@ -70,6 +122,5 @@
       "category": "Casual Shoes",
       "store": "YOHO Store"
     }
-  ],
-  "carts": []
+  ]
 }

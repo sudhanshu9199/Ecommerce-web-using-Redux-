@@ -10,8 +10,8 @@ const Nav = () => {
 
   const LogoutHandler = () => {
     dispatch(asyncLogoutUser());
-    navigator('/')
-  }
+    navigator("/");
+  };
   return (
     <nav className={style}>
       <NavLink
@@ -29,13 +29,25 @@ const Nav = () => {
 
       {user ? (
         <>
-          {user && user.isAdmin && <NavLink
+          {user && user.isAdmin && (
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+              to="/create-product"
+            >
+              Create product
+            </NavLink>
+          )}
+          <NavLink
             className={({ isActive }) => (isActive ? style.active : "")}
-            to="/create-product"
+            to="/user-profile"
           >
-            Create product
-          </NavLink>}
-          <NavLink className={({ isActive }) => (isActive ? style.active : "")} to='/user-profile'>Profile</NavLink>
+            Profile
+          </NavLink>
+          <NavLink className={style.bag}
+            to="/cart"
+          >
+            <i className="ri-shopping-bag-line"></i>
+          </NavLink>
           <button onClick={LogoutHandler}>Logout</button>
         </>
       ) : (

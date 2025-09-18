@@ -1,10 +1,13 @@
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router";
-import { asyncDeleteUser, asyncUpdateUser } from "../../store/actions/UserActions";
+import {
+  asyncDeleteUser,
+  asyncUpdateUser,
+} from "../../store/actions/UserActions";
 import { toast } from "react-toastify";
 import style from "../../styles/UserProfile.module.scss";
-import penguenImage from '../../assets/penguen.png'
+import penguenImage from "../../assets/penguen.png";
 const UserProfile = () => {
   const user = useSelector((state) => state.userReducer.users);
 
@@ -26,14 +29,17 @@ const UserProfile = () => {
 
   const DeleteHandler = () => {
     dispatch(asyncDeleteUser(user.id));
-    navigator('/login');
-  }
+    navigator("/login");
+  };
 
   return (
     <div className={style.container}>
       <div className={style.top}>
         <div className={style.dpContainer}>
-          <img src="https://i.pinimg.com/1200x/01/c5/f7/01c5f7068531893d8496777e2ece3632.jpg" alt="" />
+          <img
+            src="https://i.pinimg.com/1200x/01/c5/f7/01c5f7068531893d8496777e2ece3632.jpg"
+            alt=""
+          />
         </div>
         <div className={style.detail}>
           <p>{user?.username}</p>
@@ -66,7 +72,13 @@ const UserProfile = () => {
           required
         />
         <button>Update Profile</button>
-        <button type="button" onClick={DeleteHandler} className={style.deleteBtn}>Delete</button>
+        <button
+          type="button"
+          onClick={DeleteHandler}
+          className={style.deleteBtn}
+        >
+          Delete
+        </button>
         <img className={style.penguen} src={penguenImage} alt="" />
       </form>
     </div>

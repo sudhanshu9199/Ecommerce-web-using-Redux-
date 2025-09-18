@@ -38,7 +38,7 @@
   font-size: 2rem;
   font-family: "Comfortaa", sans-serif;
   margin-bottom: 2rem;
-  color: #A0D2DB;
+  color: #a0d2db;
 }
 .container form input {
   font-size: 1.8rem;
@@ -50,8 +50,8 @@
   font-family: "Barlow", sans-serif;
 }
 .container form button {
-  background: #BEE7E8;
-  color: #726DA8;
+  background: #bee7e8;
+  color: #726da8;
   margin-left: 3rem;
   padding: 0.3rem 0.8rem;
   font-weight: 600;
@@ -61,8 +61,8 @@
   transform: scale(0.95);
 }
 .container form .deleteBtn {
-  background: #9E2B25;
-  color: #F5F8DE;
+  background: #9e2b25;
+  color: #f5f8de;
 }
 .container form .penguen {
   position: absolute;

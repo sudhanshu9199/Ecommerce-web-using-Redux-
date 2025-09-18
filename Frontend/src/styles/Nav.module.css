@@ -1,8 +1,16 @@
 nav {
+  width: 100%;
   display: flex;
   gap: 2rem;
   margin-bottom: 1rem;
   color: rgb(225, 225, 225);
+  position: relative;
+}
+nav .bag {
+  position: absolute;
+  top: 0;
+  right: 8%;
+  font-size: 1.3rem;
 }
 
 .active {

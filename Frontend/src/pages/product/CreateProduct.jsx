@@ -13,10 +13,10 @@ const CreateProduct = () => {
   const dispatch = useDispatch();
   const CreateProductHandler = (product) => {
     product.id = nanoid();
-    dispatch(asyncCreateProducts(product))
-        console.log(product);
+    dispatch(asyncCreateProducts(product));
+    console.log(product);
     reset();
-    toast.success('✌️Created successfully!');
+    toast.success("✌️Created successfully!");
     navigator("/products");
   };
   return (
@@ -26,30 +26,41 @@ const CreateProduct = () => {
         <input
           {...register("image")}
           type="url"
-          placeholder="product image url" required
+          placeholder="product image url"
+          required
         />
-        <input {...register("title")} type="text" placeholder="title" required/>
+        <input
+          {...register("title")}
+          type="text"
+          placeholder="title"
+          required
+        />
         <input
           {...register("price")}
           step={0.1}
           type="number"
-          placeholder="0.00" required
+          placeholder="0.00"
+          required
         />
         <textarea
           {...register("desc")}
-          placeholder="product details..." required
+          placeholder="product details..."
+          required
         ></textarea>
         <div className={style.bottom}>
-          <input className={style.inputs}
-          {...register("category")}
-          type="text"
-          placeholder="category..."
-        />
-        <input className={style.inputs}
-          {...register("store")}
-          type="text"
-          placeholder="store/company name..." required
-        />
+          <input
+            className={style.inputs}
+            {...register("category")}
+            type="text"
+            placeholder="category..."
+          />
+          <input
+            className={style.inputs}
+            {...register("store")}
+            type="text"
+            placeholder="store/company name..."
+            required
+          />
         </div>
 
         <button>Create Product</button>

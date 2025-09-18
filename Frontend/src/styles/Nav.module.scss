@@ -1,14 +1,22 @@
 nav {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    color: rgb(225, 225, 225);
-    
+    width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(225, 225, 225);
+  position: relative;
+
+  .bag {
+    position: absolute;
+    top: 0;
+    right: 8%;
+    font-size: 1.3rem;
+  }
 }
 
 .active {
-        text-decoration: underline 0.1rem solid skyblue;
-        text-underline-offset: 0.3rem;
-        color: white;
-        font-weight: 500;
-    }
+  text-decoration: underline 0.1rem solid skyblue;
+  text-underline-offset: 0.3rem;
+  color: white;
+  font-weight: 500;
+}
