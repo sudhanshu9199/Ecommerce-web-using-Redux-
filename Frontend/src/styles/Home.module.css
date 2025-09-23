@@ -1,0 +1,191 @@
+.main_container {
+  width: 100%;
+}
+.main_container .banner_sec {
+  width: 100%;
+  border: 2px solid red;
+  height: 30rem;
+}
+.main_container .banner_sec img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 10%;
+     object-position: 0 10%;
+}
+.main_container .secondView figure {
+  margin: 0;
+  overflow: hidden;
+}
+.main_container .secondView html,
+.main_container .secondView body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+.main_container .secondView body {
+  color: #fff;
+  background: #4361ee;
+  font-family: "Sora", sans-serif;
+}
+.main_container .secondView footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 100%;
+  height: 7em;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1rem);
+}
+.main_container .secondView a {
+  color: #fff;
+  text-decoration: none;
+}
+.main_container .secondView .slide {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+}
+.main_container .secondView .slide__outer, .main_container .secondView .slide__inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.main_container .secondView .slide__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.main_container .secondView .slide__container {
+  position: relative;
+  max-width: 1400px;
+  width: 100vw;
+  margin: 0 auto;
+  height: 90vh;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0 1rem;
+}
+.main_container .secondView .slide__heading {
+  --width: 200;
+  display: block;
+  text-align: left;
+  font-family: "Bandeins Sans & Strange Variable";
+  font-size: clamp(5rem, 15vw, 15rem);
+  font-weight: 900;
+  font-variation-settings: "wdth" var(--width);
+  margin: 0;
+  padding: 0;
+  color: #f2f1fc;
+  z-index: 999;
+  mix-blend-mode: difference;
+  grid-area: 2/2/3/10;
+  align-self: end;
+}
+.main_container .secondView .slide__img-cont {
+  margin-top: 4rem;
+  grid-area: 2/1/7/8;
+}
+.main_container .secondView .slide__img-cont img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main_container .secondView .slide:nth-of-type(1) {
+  visibility: visible;
+}
+.main_container .secondView .slide:nth-of-type(1) .slide__content {
+  background-color: #6d597a;
+}
+.main_container .secondView .slide:nth-of-type(2) .slide__content {
+  background-color: #355070;
+}
+.main_container .secondView .slide:nth-of-type(3) .slide__content {
+  background-color: #b56576;
+}
+.main_container .secondView .slide:nth-of-type(4) .slide__content {
+  background-color: #9a8c98;
+}
+.main_container .secondView .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.main_container .secondView .overlay__content {
+  max-width: 1400px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 90vh;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.main_container .secondView .overlay__img-cont {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  grid-area: 4/3/9/11;
+}
+.main_container .secondView .overlay__img-cont img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.main_container .secondView .overlay__count {
+  grid-area: 3/10/4/10;
+  font-size: clamp(3rem, 4vw, 15rem);
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  border-bottom: 7px white solid;
+}
+@media screen and (min-width: 900px) {
+  .main_container .secondView .overlay__content,
+  .main_container .secondView .slide__container {
+    padding: 0 3rem;
+    margin-top: 10vh;
+    height: 80vh;
+  }
+  .main_container .secondView .overlay__img-cont {
+    grid-area: 5/4/10/11;
+  }
+  .main_container .secondView .overlay__count {
+    grid-area: 3/10/4/11;
+  }
+  .main_container .secondView .slide__img-cont {
+    margin-top: 0;
+    grid-area: 3/2/8/7;
+  }
+  .main_container .secondView .slide__heading {
+    grid-area: 1/1/4/10;
+  }
+}/*# sourceMappingURL=Home.module.css.map */
