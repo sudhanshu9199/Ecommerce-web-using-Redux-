@@ -4,19 +4,42 @@ import { Link } from "react-router";
 import { addToCart } from "../store/reducers/CartSlice";
 import { asyncUpdateUser } from "../store/actions/UserActions";
 import { store } from "../store/Store";
+import axios from "../api/axiosConfig";
+import { Suspense, useEffect, useState } from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const Products = () => {
-  const products = useSelector((state) => state.productsReducer.products);
   const users = useSelector((state) => state.userReducer.users);
-  const cart = useSelector((state) => state.cartReducer.cart);
   const dispatch = useDispatch();
+
+  const [products, setproducts] = useState([]);
+  const [hasMore, sethasMore] = useState(true);
+
+  const fetchProducts = async () => {
+    try {
+      const { data } = await axios.get(
+        `/products?_limit=6&_start=${products.length}`
+      );
+      if (data.length === 0) sethasMore(false);
+      else {
+        sethasMore(true);
+        setproducts([...products, ...data]);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
 
   const AddToCartHandler = (product) => {
     dispatch(addToCart(product));
     // dispatch(asyncUpdateUser(users.id, { ...users, cart: [...cart] }));
     setTimeout(() => {
       const updatedCart = store.getState().cartReducer.cart;
-    dispatch(asyncUpdateUser(users.id, { ...users, cart: updatedCart }));
+      dispatch(asyncUpdateUser(users.id, { ...users, cart: updatedCart }));
     }, 0);
   };
 
@@ -42,7 +65,25 @@ const Products = () => {
   });
 
   return products.length > 0 ? (
-    <div className={style.container}>{renderProduct}</div>
+    <div >
+      <InfiniteScroll
+        dataLength={products.length}
+        next={fetchProducts}
+        hasMore={hasMore}
+        loader={<h4>Loading...</h4>}
+        endMessage={
+          <p>
+            <b>All~</b>
+          </p>
+        } className={style.container}
+      >
+        <Suspense
+          fallback={<h1 className="text-center text-xl">LOADING...</h1>}
+        >
+          {renderProduct}
+        </Suspense>
+      </InfiniteScroll>
+    </div>
   ) : (
     "Loading..."
   );

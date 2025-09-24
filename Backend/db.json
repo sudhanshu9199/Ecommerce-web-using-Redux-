@@ -72,6 +72,123 @@
       "desc": "YOHO Quoi Sneakers for Women | Stylish Casual Shoes | Comfortable Fit | Vibrant Colours | Cushioned Insole",
       "category": "Casual Shoes",
       "store": "YOHO Store"
+    },
+    {
+      "id": "VFn-VxgXk-9KPF-BfKZXS",
+      "image": "https://m.media-amazon.com/images/I/81Vs1ZXn43L._SX522_.jpg",
+      "title": "Smart Televisions",
+      "price": "4666",
+      "desc": "Sony 139 cm (55 inches) BRAVIA 2M2 Series 4K Ultra HD Smart LED Google TV K-55S25BM2-3 Years Warranty for Limited Period",
+      "category": "Televisions",
+      "store": "Sony Store"
+    },
+    {
+      "id": "Vr1BGWNaNHnIquxzKv-JY",
+      "image": "https://m.media-amazon.com/images/I/317B4HXcGtL._SY445_SX342_QL70_FMwebp_.jpg",
+      "title": "Split-System Air Conditioners",
+      "price": "25999",
+      "desc": "Cruise 1.5 Ton 3 Star Inverter Split AC with 7-Stage Air Filtration (100% Copper, Convertible 4-in-1, PM 2.5 Filter, CWCVBK-VQ1W173, White)",
+      "category": "Air Conditioners",
+      "store": "Cruise Store"
+    },
+    {
+      "id": "2VIwFYIbnBxIle-YA7rgK",
+      "image": "https://m.media-amazon.com/images/I/61Cblx5LWAL._SX679_.jpg",
+      "title": "Refrigerators",
+      "price": "77990",
+      "desc": "Samsung 653 L, 3 Star, Frost Free, Double Door, Convertible 5-in-1 Digital Inverter, Side By Side AI Enabled Smart Refrigerator with WiFi (RS76CG8003S9HL, Silver, Refined Inox)",
+      "category": "Large Appliances",
+      "store": "Samsung Store"
+    },
+    {
+      "id": "YMGq16zzYZCYEmtBwR7vl",
+      "image": "https://m.media-amazon.com/images/I/51p281g-eFL._SX342_SY445_QL70_FMwebp_.jpg",
+      "title": "Washers",
+      "price": "37990",
+      "desc": "LG 9 Kg, 5 Star, AI Direct Drive Technology, Steam, 6 Motion DD & Wi-Fi Fully-Automatic Front Load Washing Machine (FHP1209Z5M, Intelligent & Convenient Fabric Care, Allergy Care, Middle Black)",
+      "category": "Washing Machines & Dryers",
+      "store": "LG Store"
+    },
+    {
+      "id": "4c6NUDZf5y1LAgkoHMmjc",
+      "image": "https://m.media-amazon.com/images/I/41kmVEGjTeL._SY300_SX300_QL70_FMwebp_.jpg",
+      "title": "Steamers & Idli Makers",
+      "price": "769",
+      "desc": "Amazon Brand Solimo - Stainless Steel 2 Tier – Steamer / Idli Cum Modak Maker With Glass Lid- 20 Cm | 3 Liters | Induction Base | Silver",
+      "category": "Cookware",
+      "store": "Solimo Store"
+    },
+    {
+      "id": "tr_Q5DCWKWJQRRGEyzueV",
+      "image": "https://m.media-amazon.com/images/I/81ziwbvpSsL._SX569_.jpg",
+      "title": "Ankle Socks",
+      "price": "349",
+      "desc": "Symbol Premium Men's Cotton Sports Socks Unisex | High Ankle Length | Odour-Free & Anti-bacterial | Cushioned Base | Available in Combo Packs",
+      "category": "Athletic Socks",
+      "store": "Symbol Premium Store"
+    },
+    {
+      "id": "KkAP7PCAVPaDM-i3yHHSJ",
+      "image": "https://m.media-amazon.com/images/I/719oEHipgqL._SX522_.jpg",
+      "title": "Tablets",
+      "price": "45999",
+      "desc": "Apple iPad Air 11″ with M3 chip: Built for Apple Intelligence, Liquid Retina Display, 128GB, 12MP Front/Back Camera, Wi-Fi 6E, Touch ID, All-Day Battery Life — Starlight",
+      "category": "Computers & Accessories",
+      "store": "Apple Store"
+    },
+    {
+      "id": "Ykg7G_ikpho2A0LlOxRf3",
+      "image": "https://m.media-amazon.com/images/I/71QRvV-QcuL._SX679_.jpg",
+      "title": "Juicer Mixer Grinders",
+      "price": "625",
+      "desc": "DDN_R_ Blender Mixer Grinder For Juices, Smoothies, Cold Coffee, Protein || Portable Rechargeable 6 Blades Blenders For Smoothie And Juices For Home, Office, Gym, Travel (MULTICOLOR, 380 Milliliters)",
+      "category": "Small Kitchen Appliances",
+      "store": "DDN_R_ Store"
+    },
+    {
+      "id": "s78a0N8UXq5D4sz2BhTVe",
+      "image": "https://m.media-amazon.com/images/I/71i6Cc-hFQL._SX679_.jpg",
+      "title": "Steamers & Idli Makers",
+      "price": "289",
+      "desc": "DDN_R_ Vegetable Steamer for Cooking || Steamer For Kitchen || Basket Stainless Steel Vegetable/Fruits/Salad/Steaming with Insert for Pots, Crock, Pans Food Drain Bowl (medium)",
+      "category": "Cookware",
+      "store": "DDN_R_ Store"
+    },
+    {
+      "id": "svbE-r9BR2LFg--Lqw2hI",
+      "image": "https://m.media-amazon.com/images/I/61trJ3jIIjL._SX679_.jpg",
+      "title": "Lunch Boxes",
+      "price": "2790",
+      "desc": "VAYA TYFFYN Lunch Box for Office for Men, with Polished Stainless Steel Containers,1000ml Vacuum Insulated Hot Lunch Box Without BagMat, Leakproof Hot Tiffin Box with 3 Compartments,Blue",
+      "category": "Kitchen Storage & Containers",
+      "store": "VAYA TYFFYN Store"
+    },
+    {
+      "id": "gOdsHIMvuLCFjingiv4wp",
+      "image": "https://m.media-amazon.com/images/I/71BnUU0NWGL._SX679_.jpg",
+      "title": "Water Bottles",
+      "price": "1095",
+      "desc": "Aquaminder Smart Water Bottle Glows & Beeps to Remind You to Drink More 770 ml Chug Cap Bottle For Adults and Kids Perfect For Gift, Travel, Gym, Yoga, Black, Silicone",
+      "category": "Kitchen Storage & Containers",
+      "store": "Aquaminder Store"
+    },
+    {
+      "id": "o5RL3p2KNWIHivkhFoBnA",
+      "image": "https://m.media-amazon.com/images/I/51EDkEc2F+L._SX679_.jpg",
+      "title": "Notebook Computer Stands",
+      "price": "999",
+      "desc": "Portronics My Buddy K9 Pro 2-in-1 Laptop & Phone Stand with 360° Rotating Base, Adjustable Height & Angle, Foldable Metal Design, Heat Dissipation, Universal Fit for 10–15.6” Laptops",
+      "category": "Laptop Accessories",
+      "store": "Portronics Store"
+    },
+    {
+      "id": "i1gJYYIeWj3GXARgn2k_M",
+      "image": "https://m.media-amazon.com/images/I/61W3NejkMdL._SX679_.jpg",
+      "title": "2 Wheelers",
+      "price": "85338",
+      "desc": "Bajaj Pulsar 125 Di Carbon Ug Motorcycle/Motorbike - Ebony Black & Blue Decals - Ex-Showroom",
+      "category": "Car & Motorbike",
+      "store": "PULSAR Store"
     }
   ]
 }
